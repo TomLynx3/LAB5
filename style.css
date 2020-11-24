@@ -1,0 +1,156 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #008996;
+    margin-top:2rem;
+    text-align: center;
+}
+
+.container{
+    height: 80vh;
+    width: 100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    box-shadow: 4px 5px 26px 9px#888888;
+    height: 60%;
+    width:70%;
+    background-color: #98AFBA;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.controlers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.btn{
+    padding:0.5rem 2.3rem;
+    background-color:#00A4E9;
+    border:none;
+    outline:none;
+    width: 80%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 3rem;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.25,1.25);
+    -webkit-transform: scale(1.25,1.25);
+    -moz-transform: scale(1.25,1.25);
+    -ms-transform: scale(1.25,1.25);
+    -o-transform: scale(1.25,1.25);
+}
+
+.sequence{
+    background-color:black;
+    margin-top:2rem;
+    padding:1rem;
+    width:80%;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:white;
+    text-align: left;
+}
+
+.output{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.output:hover{
+    cursor: pointer;
+}
+
+
+@keyframes animationSeq {
+    from{ top:-50px}
+    to{top:0px}
+  }
+
+  .numbers{
+      position: relative;
+    animation-name: animationSeq;
+    animation-duration: 2s;
+    padding:0.5rem;
+  }
+
+  @keyframes lastAnimation{
+    from{ left: 0px;opacity:1}
+    to{left:100px;opacity: 0;}
+  }
+
+  .last {
+      position: relative;
+      animation-name: lastAnimation;
+      animation-duration: 2s;
+  }
+
+  
+  
+
+
+  @keyframes firstAnimation{
+    from{ top: 0px;opacity:1}
+    to{top:-100px;opacity: 0;}
+  }
+
+  .transform{
+    position: absolute;
+    animation-name: firstAnimation;
+    animation-duration: 2s;
+  }
+
+  .numberToChange{
+   position: relative;
+    left: -90px;
+    top:70px;
+    display: none;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color:white;
+    animation-name:addNumber;
+    animation-duration:2s;
+}
+
+  @keyframes addNumber {
+      from{left:-200px;opacity: 0;}
+      to{left:-90px;opacity: 1;}
+  }
+
+
+  .offset{
+    position: relative;
+    animation-name: offsetAnimation;
+    animation-duration: 2s;
+  }
+
+  @keyframes offsetAnimation {
+    from{left:0px}
+    to{left:50px}
+}
