@@ -9,6 +9,9 @@ let sequence = [];
 
 function fillSeq () {
     sequenceDiv.innerHTML = '';
+    if(document.getElementById('number777').style.display='block'){
+        document.getElementById('number777').style.display='none'
+    }
     let i=10;
    while(i>=6){
     sequence.push(fibonacci(i));
@@ -54,6 +57,7 @@ function remove6(){
 
 function transform10(e){
     if(e.target.innerHTML == '89'){
+        
         document.getElementById('number777').style.display='block'
         document.getElementById("sequence").firstChild.classList.add('transform')
         const spanNodes = document.querySelectorAll('.numbers')

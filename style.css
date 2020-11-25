@@ -68,7 +68,7 @@ body{
     background-color:black;
     margin-top:2rem;
     padding:1rem;
-    width:80%;
+    width:40%;
     font-size:20px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -88,14 +88,14 @@ body{
 
 
 @keyframes animationSeq {
-    from{ top:-50px}
-    to{top:0px}
+    from{ top:-150%}
+    to{top:0%}
   }
 
   .numbers{
       position: relative;
     animation-name: animationSeq;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     padding:0.5rem;
   }
 
