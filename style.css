@@ -139,8 +139,8 @@ body{
 }
 
   @keyframes addNumber {
-      from{left:-200px;opacity: 0;}
-      to{left:-90px;opacity: 1;}
+      from{left:-30%;opacity: 0;}
+      to{left:-15%;opacity: 1;}
   }
 
 

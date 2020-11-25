@@ -18,9 +18,6 @@ function fillSeq () {
     i--;
    }
 
-   
-  
-   
    sequence.map((item)=>{
     const node = document.createElement('span');
     const textnode = document.createTextNode(item);
